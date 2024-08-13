@@ -27,7 +27,6 @@
     function ShoppingListCheckOffService() {
         var service = this;
 
-        // Pre-populated "To Buy" list
         var toBuyItems = [
             { name: "cookies", quantity: 10 },
             { name: "chips", quantity: 5 },
