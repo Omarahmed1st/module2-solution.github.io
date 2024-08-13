@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="list">
+        <div class="list" ng-controller="ToBuyController as toBuy">
             <h2>To Buy</h2>
             <p ng-if="toBuy.items.length === 0" class="message">Everything is bought!</p>
             <ul>
@@ -18,7 +18,7 @@
                 </li>
             </ul>
         </div>
-        <div class="list">
+        <div class="list" ng-controller="AlreadyBoughtController as bought">
             <h2>Already Bought</h2>
             <p ng-if="bought.items.length === 0" class="message">Nothing bought yet</p>
             <ul>
